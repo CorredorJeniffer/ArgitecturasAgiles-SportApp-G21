@@ -2,12 +2,11 @@ Flask
 flask-marshmallow
 Flask-RESTful
 Flask-SQLAlchemy
+Flask-SocketIO
 SQLAlchemy
 marshmallow-sqlalchemy
 requests
 redis
 rq
-flask-jwt-extended
-pyopenssl
 flask-jwt-extended
 pyopenssl

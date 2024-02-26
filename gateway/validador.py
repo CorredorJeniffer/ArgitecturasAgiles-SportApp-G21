@@ -2,7 +2,7 @@ from importlib.resources import Resource
 from flask import request
 from flask_jwt_extended import jwt_required
 
-from gateway.base import AuxEvento, socketio
+from base import AuxEvento, socketio
 from primer_evento.base import Evento, db, q, api, app
 
 
@@ -36,7 +36,7 @@ def sendValue(eventos):
     socketio.emit('response', {'evento': eventos[0]})
 
 
-api.add_resource(VistaEvento, '/api-commands/primer_evento')
+api.add_resource(VistaEvento, '/api-commands/events')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', ssl_context='adhoc')
